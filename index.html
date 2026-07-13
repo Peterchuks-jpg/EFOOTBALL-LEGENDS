@@ -16,7 +16,68 @@
             <p class="tagline">Dominating the Pitch | Competitive Clan</p>
         </header>
 
-        <!-- Interactive Tactical Hub Terminal -->
+        <!-- NEW: Player Card Generator Widget -->
+        <section class="card-generator-section">
+            <h2>Create Your Clan Card</h2>
+            <div class="generator-grid">
+                
+                <!-- Generator Controls -->
+                <div class="gen-controls">
+                    <div class="input-group">
+                        <label for="card-name">Player Name</label>
+                        <input type="text" id="card-name" placeholder="e.g., GoalMachine" maxlength="12" value="Legend_01">
+                    </div>
+                    
+                    <div class="input-row">
+                        <div class="input-group">
+                            <label for="card-rating">Rating</label>
+                            <input type="number" id="card-rating" min="80" max="105" value="99">
+                        </div>
+                        <div class="input-group">
+                            <label for="card-pos">Position</label>
+                            <select id="card-pos">
+                                <option value="CF">CF</option>
+                                <option value="LWF">LWF</option>
+                                <option value="RWF">RWF</option>
+                                <option value="AMF" selected>AMF</option>
+                                <option value="CMF">CMF</option>
+                                <option value="DMF">DMF</option>
+                                <option value="CB">CB</option>
+                                <option value="GK">GK</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="input-group">
+                        <label for="card-theme">Card Theme</label>
+                        <select id="card-theme">
+                            <option value="theme-epic">Epic (Green Neon)</option>
+                            <option value="theme-showtime">Show Time (Vibrant Violet)</option>
+                            <option value="theme-legend">Legendary (Gold Flame)</option>
+                        </select>
+                    </div>
+                </div>
+
+                <!-- Live Card Preview -->
+                <div class="gen-preview">
+                    <div id="ef-card" class="ef-card theme-epic">
+                        <div class="card-glow"></div>
+                        <div class="card-top">
+                            <div class="card-rating-display" id="preview-rating">99</div>
+                            <div class="card-pos-display" id="preview-pos">AMF</div>
+                        </div>
+                        <div class="card-avatar">👤</div>
+                        <div class="card-bottom">
+                            <div class="card-name-display" id="preview-name">Legend_01</div>
+                            <div class="card-clan">EFL LEGENDS</div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Tactical Hub Terminal -->
         <section class="terminal-card">
             <div class="terminal-header">
                 <span class="dot red"></span>
