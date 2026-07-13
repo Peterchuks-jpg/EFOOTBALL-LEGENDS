@@ -1,0 +1,180 @@
+:root {
+    --bg-color: #0b0f19;
+    --card-bg: #111827;
+    --accent-color: #10b981; /* Pitch Green */
+    --terminal-accent: #34d399; 
+    --text-color: #e5e7eb;
+    --border-color: #1f2937;
+}
+
+body {
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    margin: 0;
+    padding: 40px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.container {
+    max-width: 600px;
+    width: 100%;
+}
+
+/* Header */
+.profile-header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.avatar {
+    font-size: 3.5rem;
+    background: var(--card-bg);
+    width: 90px;
+    height: 90px;
+    line-height: 90px;
+    border-radius: 50%;
+    margin: 0 auto 15px auto;
+    border: 2px solid var(--border-color);
+    box-shadow: 0 0 15px rgba(16, 185, 129, 0.2);
+}
+
+.profile-header h1 {
+    margin: 0;
+    font-size: 2.2rem;
+    color: #f3f4f6;
+    letter-spacing: -0.5px;
+}
+
+.tagline {
+    color: #9ca3af;
+    font-size: 0.95rem;
+    margin-top: 5px;
+}
+
+/* Terminal Card */
+.terminal-card {
+    background-color: var(--card-bg);
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    overflow: hidden;
+    margin-bottom: 25px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.4);
+}
+
+.terminal-header {
+    background-color: #1f2937;
+    padding: 10px 15px;
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid var(--border-color);
+}
+
+.dot {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    margin-right: 6px;
+    display: inline-block;
+}
+
+.red { background-color: #f87171; }
+.yellow { background-color: #fbbf24; }
+.green { background-color: #34d399; }
+
+.terminal-title {
+    margin-left: 10px;
+    font-family: monospace;
+    font-size: 0.85rem;
+    color: #9ca3af;
+}
+
+.terminal-body {
+    padding: 20px;
+    font-family: monospace;
+    font-size: 0.9rem;
+    line-height: 1.6;
+}
+
+.command {
+    color: var(--accent-color);
+    margin: 0 0 8px 0;
+}
+
+.response {
+    color: #f3f4f6;
+    margin: 0 0 20px 0;
+}
+
+.action-btn {
+    background-color: transparent;
+    border: 1px solid var(--terminal-accent);
+    color: var(--terminal-accent);
+    padding: 8px 16px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-family: monospace;
+    font-weight: bold;
+    transition: all 0.2s ease;
+}
+
+.action-btn:hover {
+    background-color: rgba(52, 211, 153, 0.1);
+    box-shadow: 0 0 8px rgba(52, 211, 153, 0.3);
+}
+
+.hidden-output {
+    margin-top: 15px;
+    color: #9ca3af;
+    border-left: 2px solid var(--terminal-accent);
+    padding-left: 10px;
+}
+
+/* Skills Grid */
+.skills-section {
+    margin-bottom: 30px;
+}
+
+.skills-section h2 {
+    font-size: 1.1rem;
+    color: #f3f4f6;
+    margin-bottom: 15px;
+}
+
+.skills-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.skill-tag {
+    background-color: var(--card-bg);
+    border: 1px solid var(--border-color);
+    padding: 6px 12px;
+    border-radius: 20px;
+    font-size: 0.85rem;
+    color: #d1d5db;
+}
+
+/* Footer Links */
+footer {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    border-top: 1px solid var(--border-color);
+    padding-top: 20px;
+}
+
+.footer-link {
+    color: #9ca3af;
+    text-decoration: none;
+    font-size: 0.9rem;
+    transition: color 0.2s;
+}
+
+.footer-link:hover {
+    color: var(--accent-color);
+}
